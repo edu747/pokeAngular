@@ -14,6 +14,8 @@ import { PokedexMapComponent } from '../pokedex-map/pokedex-map.component';
 export class PokedexPokeworldComponent implements OnInit {
     @Output() choosePokemonEvent = new EventEmitter<object>();
     @Output() chooseTypeEvent = new EventEmitter<object>();
+    // t
+    public term: any;
 
     private fullPokemonList: Pokemon[];
     private currentPokemonList: Pokemon[];
@@ -21,7 +23,7 @@ export class PokedexPokeworldComponent implements OnInit {
     private map: any;
     private markers: any;
 
-    private pokemonTypes: string[] = [
+    public pokemonTypes: string[] = [
         'all',
         'normal',
         'fighting',
